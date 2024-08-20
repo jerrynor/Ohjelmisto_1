@@ -38,6 +38,33 @@ print(keskiarvo)
 """
 
 #5
+import math
+
+gramma = 1
+kilogramma = gramma * 1000
+
+luoti = gramma * 13.3
+naula = luoti * 32
+leiviskä = naula * 20
+
+leiviskäMäärä = float(input("Anna leiviskämäärä: ")) * leiviskä
+naulaMäärä = float(input("Anna naulamäärä: ")) * naula
+luotiMäärä = float(input("Anna luotimäärä: ")) * luoti
+
+kokonaisMassaGrammoina = leiviskäMäärä + naulaMäärä + luotiMäärä
+kokonaisMassaKiloina = kokonaisMassaGrammoina / kilogramma
+
+pyöristettyMassa = math.floor(kokonaisMassaKiloina)
+yliJääneetGrammat = kokonaisMassaKiloina - pyöristettyMassa
+
+print(f"Massa nykymittojen mukaan:\n{pyöristettyMassa} kilogrammaa ja {yliJääneetGrammat * kilogramma:.2f} grammaa")
+
+
+
+
+
+
+
 
 
 
