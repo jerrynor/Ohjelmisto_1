@@ -35,7 +35,7 @@ keskiarvo = summa / 3
 print(summa)
 print(tulo)
 print(keskiarvo)
-"""
+
 
 #5
 import math
@@ -58,6 +58,23 @@ pyöristettyMassa = math.floor(kokonaisMassaKiloina)
 yliJääneetGrammat = kokonaisMassaKiloina - pyöristettyMassa
 
 print(f"Massa nykymittojen mukaan:\n{pyöristettyMassa} kilogrammaa ja {yliJääneetGrammat * kilogramma:.2f} grammaa")
+"""
+
+#6
+import random
+
+lukonNumero = 0
+
+print("Kolminumeroisen lukon koodi on: ")
+for i in range(3):
+    lukonNumero = random.randrange(0, 9)
+    print(lukonNumero)
+
+print("Nelinumeroisen lukon koodi on:")
+for i in range(4):
+    lukonNumero = random.randrange(1, 6)
+    print(lukonNumero)
+
 
 
 
