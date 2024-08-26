@@ -63,8 +63,6 @@ print(f"Massa nykymittojen mukaan:\n{pyöristettyMassa} kilogrammaa ja {yliJää
 #6
 import random
 
-lukonNumero = 0
-
 print("Kolminumeroisen lukon koodi on: ")
 for i in range(3):
     lukonNumero = random.randrange(0, 9)
